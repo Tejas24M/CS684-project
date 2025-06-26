@@ -11,13 +11,12 @@ Created for the CS684 Embedded Systems course, this project builds a line-follow
 - [Obstacle Avoidance](#obstacle-avoidance)
 - [Parking](#parking)
 
-## Robot
+## 1) Robot
 The line-following robot is equipped with five IR sensors underneath to detect the line, two IR sensors at the front (front-left and front-right), and two obstacle sensors on the sides (left and right).
 
 ## PID
 A node named pid is defined to process the five sensor inputs and calculate the left and right motor velocities using a PID control algorithm. The node takes in the sensor values and, through a series of logical steps, returns the velocities for both motors.
-
-# PID Terms
+PID Terms
 The control algorithm uses three terms:
 
 - **Proportional**: Directly adjusts the motor speed based on the current error (difference between the sensor readings).
