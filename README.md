@@ -41,3 +41,6 @@ In the main node, within the BlackLine state, a substate called obstacle is defi
 
 ## Parking
 n the main node, within the BlackLine state, a substate called CheckParkingSpots is defined. This state is triggered when either the left or right IR sensor detects an object. It uses two variables, right_empty and left_empty, to check if there is an object on the right or left side. If no object is detected on a side, it increments the corresponding side count and moves forward for a short time. Once it detects two consecutive empty sides, it moves forward briefly and then reverses to the corresponding empty side to park itself.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
